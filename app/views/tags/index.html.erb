@@ -1,0 +1,13 @@
+<h1>Tags for you</h1>
+
+<ul class="tags">
+  <% @tags.each do |tags| %>
+    <li>
+      <%= link_to tags.name, tag_path(tags) %>
+      <%= link_to "delete", method: :delete %>
+    </li>
+
+
+  <% end %>
+
+</ul>
